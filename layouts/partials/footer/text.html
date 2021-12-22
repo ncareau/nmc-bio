@@ -1,0 +1,57 @@
+<footer>
+    <div class="background-gray">
+        <div id="contact" class="container">
+            <h2>{{ i18n "index_contact" . }}</h2>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <a href="{{ .Site.Params.contact.twitter_url }}" target="_blank">
+                                <span class="fa-stack fa-lg fa-left">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                                {{ .Site.Params.contact.twitter_handle }} </a>
+                        </li>
+                        <li>
+                            <a href="{{ .Site.Params.contact.linkedin_url }}" target="_blank">
+                                <span class="fa-stack fa-lg fa-left">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                                {{ .Site.Params.contact.linkedin_user }} </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-bullets" style="text-align: right">
+                        <li>
+                            <a href="mailto:{{ .Site.Params.contact.mail }}">
+                                {{ .Site.Params.contact.mail }}
+                                <span class="fa-stack fa-lg fa-right">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ .Site.Params.contact.github_url }}" target="_blank">
+                                {{ .Site.Params.contact.github_user }}
+                                <span class="fa-stack fa-lg fa-right">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+        </div>
+    </div>
+</footer>

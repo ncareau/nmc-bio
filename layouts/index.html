@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+    <head>
+        {{ partial "head/metadata.html" . }}
+        {{ partial "head/openGraph.html" . }}
+        {{ partial "head/favicons.html" . }}
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/86c0c9e7e9.js"></script>
+        <link href="/css/nmcbio.css" rel="stylesheet">
+
+        {{ partial "head/googletag.html" . }}
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar-example" class="fixed">
+
+
+        {{ if eq $.Site.Language.LanguageName "English" }}
+            <div class="lang"><a href="/fr">FR</a></div>
+        {{ else }}
+            <div class="lang"><a href="/">EN</a></div>
+        {{ end }}
+
+        <div id="top" class="jumbotron" style="height: 911px;">
+            <div class="container">
+                <div id="name-box" class="h1">
+                    <div>
+                        <div id="l1">N</div><div id="w1" style="display: none; opacity: 0">icolas</div>
+                    </div>
+        
+                    <div>
+                        <div id="l2">M</div><div id="w2" style="display: none; opacity: 0">.</div>
+                    </div>
+        
+                    <div>
+                        <div id="l3">C</div><div id="w3" style="display: none; opacity: 0">areau</div>
+                    </div>
+                </div>
+                <p class="lead">
+                    <a href="#profile" title="{{ i18n "nav_about" . }}" class="btn btn-lead">{{ i18n "nav_about" . }}</a>
+                    <a href="#experiences" title="{{ i18n "nav_career" . }}" class="btn btn-lead">{{ i18n "nav_career" . }}</a>
+                    <a href="#projects" title="{{ i18n "nav_projects" . }}" class="btn btn-lead">{{ i18n "nav_projects" . }}</a>
+                    <a href="#clients" title="{{ i18n "nav_clients" . }}" class="btn btn-lead">{{ i18n "nav_clients" . }}</a>
+                    <a href="#contact" title="{{ i18n "nav_contact" . }}" class="btn btn-lead">{{ i18n "nav_contact" . }}</a>
+                </p>
+            </div>
+        
+            <div class="overlay"></div>
+        
+            <span class="scroll-down">
+                <!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
+            </span>
+        </div>
+        
+        <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">{{ i18n "nav_navigation" . }}</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#profile">{{ i18n "nav_about" . }}</a></li>
+                    <li class=""><a href="#experiences">{{ i18n "nav_career" . }}</a></li>
+                    <li class=""><a href="#projects">{{ i18n "nav_projects" . }}</a></li>
+                    <li class=""><a href="#clients">{{ i18n "nav_clients" . }}</a></li>
+                    <li class=""><a href="#contact">{{ i18n "nav_contact" . }}</a></li>
+        
+        
+                    {{ if eq $.Site.Language.LanguageName "English" }}
+                        <li class=""><a href="/fr">Français</a></li>
+                    {{ else }}
+                        <li class=""><a href="/">English</a></li>
+                    {{ end }}
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+        {{ with .Site.GetPage "/home" }}
+        {{ $home := . }}
+        {{ $pages := .Resources.ByType "page" }}
+
+        {{ with .Site.GetPage "/projects" }}
+            {{ $pages = $pages | append . }}
+        {{ end }}
+
+        {{ with .Site.GetPage "/clients" }}
+            {{ $pages = $pages | append . }}
+        {{ end }}
+    
+        {{ with .Site.GetPage "/jobs" }}
+            {{ $pages = $pages | append . }}
+        {{ end }}
+
+        
+        <!-- About me section -->
+        {{ with .Resources.GetMatch "about.md" }}
+        <div class="background-white">
+            <div id="profile" class="container">
+                <h2>{{ i18n "about_aboutme" . }}</h2>
+                <p class="lead">{{ .Site.Params.keywords }}</p>
+        
+                <hr>
+        
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="/img/Nicolas Careau_low.jpg" alt="Photo of {{ .Site.Params.fullname }}" width="246" height="246">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>{{ i18n "about_aboutme" . }}</h3>
+                        <p>{{ .Content }}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>{{ i18n "about_details" . }}</h3>
+                        <p>
+                            <strong>{{ i18n "about_name" . }}</strong><br>
+                            {{ .Site.Params.fullname }}<br>
+                            <strong>{{ i18n "about_hobbies" . }}</strong><br>
+                            {{ .Site.Params.hobbies }}<br>
+                            <strong>{{ i18n "about_location" . }}</strong><br>
+                            <a href="https://goo.gl/maps/8YB5S5V8w9v" target="_blank"><span class="fa fa-map-marker"></span>
+                                Québec, Canada </a><br>
+                            <strong>{{ i18n "about_dog" . }}</strong><br>
+                            <a href="https://howtoluna.ca" target="_blank"><i class="fas fa-paw"></i> Luna </a>
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        {{ end }}
+        <!-- End About me section -->
+
+        {{ range sort $pages "Params.weight" }}
+        {{ if (ne .Name "about.md") }}
+        {{ if .File }}
+        {{ if eq (os.Stat .File.Dir).Name "projects" }}
+            <!-- Now for some cool projects -->
+            {{ partial "home/projects.html" . }}
+        {{ else if eq (os.Stat .File.Dir).Name "jobs" }}
+            <!-- Show my job list -->
+            {{ partial "home/jobs.html" . }}
+        {{ else if eq (os.Stat .File.Dir).Name "clients" }}
+            <!-- Show my clients -->
+            {{ partial "home/clients.html" . }}
+        {{ else if eq .Name "cert.md"}}
+            <!-- Show certifications -->
+            {{ partial "home/cert.html" . }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+
+
+        {{ end }}
+
+        {{ partial "footer/text.html" . }}
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/velocity.min.js"></script>
+        <script type="text/javascript" src="/js/nmcbio.js"></script>
+
+    </body>
+
+</html>

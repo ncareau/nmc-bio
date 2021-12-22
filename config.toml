@@ -1,0 +1,45 @@
+baseURL = 'https://nmc.dev/'
+languageCode = 'en-us'
+
+[params]
+    fullname = "Nicolas M. Careau"
+    [params.contact]
+        mail = 'n@nmc.dev'
+
+        twitter_url = 'https://twitter.com/nmclab'
+        twitter_handle = '@nmclab'
+
+        linkedin_url = 'https://www.linkedin.com/in/nicolas-m-careau'
+        linkedin_user = 'linkedin.com/in/nicolas-m-careau'
+
+        github_url = 'https://github.com/ncareau'
+        github_user = 'github.com/ncareau'
+
+[taxonomies]
+    tag = "tags"
+    series = "series"
+
+[languages]
+    [languages.en]
+        languageName     = "English"
+        languageCode     = "en-us"
+        contentDir       = "content/en"
+        weight           = 0
+        title            = "Nicolas M. Careau - Developer and technologist"
+
+        [languages.en.params]
+            description  = "CHANGECHANGECHANGEME"
+            keywords     = "Développement - Technologies - Jeux Vidéos"
+            hobbies      = "Video Games, LEGO, Electronics" 
+
+    [languages.fr]
+        languageName     = "Français"
+        languageCode     = "fr"
+        contentDir       = "content/fr"
+        weight           = 1
+        title            = "Nicolas M. Careau - Développeur et technologue"
+        
+        [languages.fr.params]
+            description  = "CHANGECHANGECHANGEME"
+            keywords     = "Développement - Technologies - Jeux Vidéos"
+            hobbies      = "Jeux vidéos, LEGO, Électronique"

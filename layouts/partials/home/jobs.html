@@ -1,0 +1,50 @@
+{{ with .Site.GetPage "/jobs" }}
+<div id="experiences" class="container">
+    <h2>{{ .Name }}</h2>
+
+    <hr>
+
+    {{ if eq .Params.looking_for_a_job true }}
+    <div class="alert alert-danger">
+        <strong>{{ .Content}}</strong>
+    </div>
+    {{ end }}
+
+    <div class="experiences">
+
+        {{ range sort .Pages "Params.weight" }}
+
+        <div class="experience row">
+            <div class="col-md-4">
+                <h4>{{ .Params.job_company }}</h4>
+                <p class="experience-period">{{ .Params.job_timeframe }}</p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    <strong>{{ .Title }}</strong>
+                    <span class="hidden-phone">{{ .Content }}</span>
+                    <span class="experience-details">
+                    
+
+                    {{ range $index, $link := .Params.links }}
+                        {{ if gt $index 0 }}
+                            <span class="separator">|</span>
+                        {{ end }}
+                        <span class="link">
+                            <span class="fa fa-link"></span>
+                            <a href="{{ $link.url }}" target="_blank">{{ $link.name }}</a>
+                        </span>
+                    {{ end }}
+
+				</span>
+                </p>
+            </div>
+        </div>
+
+        {{ end }}
+
+    </div>
+
+</div>
+
+{{ end }}
