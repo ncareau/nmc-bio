@@ -278,79 +278,6 @@ hr {
     color: #BCBCBC;
 }
 
-#abilities ul > li {
-    min-height: 30px;
-    padding: 3px 0px;
-}
-
-#abilities ul > li:hover {
-    background: #F2F2F2;
-}
-
-#abilities ul > li .ability-title {
-    padding-left: 4px;
-    display: inline-block;
-    width: 60%;
-}
-
-#abilities ul > li .ability-score {
-    float: right;
-}
-
-#abilities ul > li .ability-score .fa {
-    color: #6d6e6e;
-    font-size: 16px;
-    margin-left: 2px;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-#abilities ul > li .ability-score .fa-star {
-    color: #fc4000;
-}
-
-#abilities ul > li:hover .ability-score .fa {
-    margin-left: 4px;
-}
-
-#interests .left {
-    float: left;
-}
-
-#interests .right {
-    float: right;
-}
-
-#interests img {
-    width: 80%;
-    height: auto;
-}
-
-#interests .right img {
-    float: right;
-}
-
-#interests .interest-content {
-    padding: 40px 0px;
-}
-
-#interests .row:hover .left img {
-    -webkit-transform: rotate(-12deg);
-    -moz-transform: rotate(-12deg);
-    -ms-transform: rotate(-12deg);
-    -o-transform: rotate(-12deg);
-}
-
-#interests .row:hover .right img {
-    -webkit-transform: rotate(12deg);
-    -moz-transform: rotate(12deg);
-    -ms-transform: rotate(12deg);
-    -o-transform: rotate(12deg);
-}
-
 #projects .row > div {
     margin-bottom: 30px;
 }
@@ -421,7 +348,7 @@ hr {
     color: #FFFFFF;
 }
 
-#contact a {
+#contact-socials a {
     display: block;
     font-size: 18px;
     line-height: 32px;
@@ -526,37 +453,6 @@ hr {
 
     #profile .row * {
         text-align: center;
-    }
-
-    #experiences .experience .experience-details > span {
-        display: block;
-        margin-bottom: 6px;
-    }
-
-    #experiences .experience .experience-details .separator {
-        display: none;
-    }
-
-    #interests .left {
-        float: none;
-    }
-
-    #interests .right {
-        float: none;
-    }
-
-    #interests > * {
-        text-align: center;
-    }
-
-    #interests img {
-        width: 50%;
-        height: auto;
-        float: none !important;
-    }
-
-    #interests .interest-content {
-        padding: 20px 0px;
     }
 
     #contact {

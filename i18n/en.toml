@@ -61,6 +61,12 @@
 [lang_en_capacity]
     other = "Full professional efficiency"
 
+[proj_projects]
+    other = "Projects"
+
+[proj_toseemore]
+    other = "To see more"    
+
 [404_title]
     other = "404"
 

@@ -2,107 +2,39 @@
 <div id="clients" class="container"> 
     <div class="row">
  
-         <h2>{% trans %}Clients{% endtrans %}</h2>
+         <h2>{{ .Title }}</h2>
          <div class="col-md-12">
  
-             <div class="media" style="margin-bottom: 3em;">
-                 <div class="media-left">
-                     <a href="https://udata.ca/" target="_blank">
-                         <img class="media-object" src="/img_client/udata.png" width="100">
-                     </a>
-                 </div>
-                 <div class="media-body clearfix">
-                     <h4 class="media-heading">
-                         <a href="https://udata.ca/" target="_blank">Udata <i class="far fa-external-link"></i></a>
-                     </h4>
-                     <p>{% trans %}Entreprise qui offre un logiciel de gestion numérique de données. Developpeur de la plateforme{% endtrans %} <a
-                                 href="https://rpa360.com" target="_blank">rpa360.com</a></p>
-                     <div>
-                         <span class="label label-primary">{% trans %}Infrastucture cloud{% endtrans %}</span>
-                     </div>
-                 </div>
-             </div>
- 
-             <div class="media" style="margin-bottom: 3em;">
-                 <div class="media-left">
-                     <a href="https://www.vetreseau.com/" target="_blank">
-                         <img class="media-object" src="/img_client/logo-vetreseau.svg" width="100">
-                     </a>
-                 </div>
-                 <div class="media-body">
-                     <h4 class="media-heading">
-                         <a href="https://www.vetreseau.com/" target="_blank">VetReseau <i
-                                     class="far fa-external-link"></i></a>
- 
-                     </h4>
-                     <p> {% trans %}Entreprise qui offre un service de remplacant dans les vétérinaire a l'aide d'un logiciel de
-                         placement.{% endtrans %}</p>
-                     <div>
-                         <span class="label label-primary">WebDev</span>
-                         <span class="label label-primary">Cloud</span>
-                     </div>
-                 </div>
- 
-             </div>
- 
-             <div class="media" style="margin-bottom: 3em;">
-                 <div class="media-left">
-                     <a href="https://graep.org/" target="_blank">
-                         <img class="media-object" src="/img_client/logoVertical.png" width="100">
-                     </a>
-                 </div>
-                 <div class="media-body">
-                     <h4 class="media-heading">
-                         <a href="https://graep.org/" target="_blank">Graep <i class="far fa-external-link"></i></a>
-                     </h4>
-                     <p>{% trans %}Le Groupe des responsables en analyse et évaluation de programme (GRAEP) a été fondé en 1989 afin
-                         de favoriser le développement et la promotion de la fonction d'évaluation de programme dans les
-                         ministères et organismes du gouvernement du Québec.{% endtrans %}</p>
-                     <div>
-                         <span class="label label-primary">{% trans %}Site web{% endtrans %}</span>
-                     </div>
-                 </div>
-             </div>
- 
-             <div class="media" style="margin-bottom: 3em;">
-                 <div class="media-left">
-                     <a href="http://www.association-assq.qc.ca" target="_blank">
-                         <img class="media-object" src="/img_client/ASSQ.Logo.png" width="100">
-                     </a>
-                 </div>
-                 <div class="media-body">
-                     <h4 class="media-heading">
-                         <a href="http://www.association-assq.qc.ca" target="_blank">ASSQ <i
-                                     class="far fa-external-link"></i></a>
-                     </h4>
-                     <p>{% trans %}L'Association des statisticiennes et statisticiens du Québec (ASSQ) est un regroupement de
-                         statisticiens établi dans la province de Québec, au Canada.{% endtrans %}</p>
-                     <div>
-                         <span class="label label-primary">{% trans %}Site web{% endtrans %}</span>
-                     </div>
-                 </div>
-             </div>
- 
-             <div class="media" style="margin-bottom: 3em;">
-                 <div class="media-left">
-                     <div style="width: 100px;"></div>
-                 </div>
-                 <div class="media-body">
-                     <h4 class="media-heading">
-                         <a href="/img_projects/pwd1.PNG" target="_blank">SOM & Desjardins <i
-                                     class="far fa-image"></i></a>
- 
-                     </h4>
-                     <p>
-                         {% trans %}Projet d'application web pour l'affichage et le filtrage de données d'un sondage chez
-                         Desjardins.{% endtrans %}
-                     </p>
-                     <div>
-                         <span class="label label-primary">{% trans %}Application Web{% endtrans %}</span>
-                     </div>
-                 </div>
-             </div>
- 
+            {{ range sort .Pages "Params.weight" }}
+
+            <div class="media" style="margin-bottom: 3em;">
+                <div class="media-left">
+                    <a href="{{ .Params.client_link }}" target="_blank">
+                        {{ with .Resources.ByType "image" }}
+                        {{ range first 1 (sort . "Params.weight") }}
+                        {{ $image := .Resize "100x webp" }}
+                        <img  class="media-object" src="{{ $image.Permalink }}" alt ="{{ $image.Name }}" width="100">
+                        {{ end }}
+                        {{ end }}
+                    </a>
+                </div>
+                <div class="media-body clearfix">
+                    <h4 class="media-heading">
+                        <a href="{{ .Params.client_link }}" target="_blank">Udata <i class="far fa-external-link"></i></a>
+                    </h4>
+
+                    {{ .Content }}
+
+                    <div>
+                       {{ range .Params.tags }}
+                           <span class="label label-primary">{{ . }}</span>
+                       {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            {{ end }}
+
          </div>
  
      </div>

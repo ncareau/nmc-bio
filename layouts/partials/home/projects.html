@@ -1,31 +1,12 @@
 {{ with .Site.GetPage "/projects" }}
 
 <div id="projects" class="container">
-    <h2>{% trans %}Projets{% endtrans %}</h2>
+    <h2>{{ i18n "proj_projects" . }}</h2>
 
     <div class="row">
         <div class="col-md-12" style="margin-bottom:0px;">
 
-            <div class="media" style="margin-bottom: 3em;">
-                <div class="media-left">
-                    <div style="width: 50px;"></div>
-                </div>
-                <div class="media-body clearfix">
-                    <h4 class="media-heading">
-                        <a href="https://github.com/ncareau/mikro-watch/" target="_blank"><i class="fab fa-github"></i>
-                            Mikro Watch <i class="far fa-external-link"></i></a>
-                    </h4>
-                    <p>
-                        {% trans %}Logiciel permettant de prendre les donnée analytic d'un router Mikrotik et de les envoyé vers InfluxDB{% endtrans %}
-                    </p>
-
-                    <div>
-                        <span class="label label-primary">Mikrotik</span>
-                        <span class="label label-primary">InfluxDB</span>
-                        <span class="label label-primary">Grafana</span>
-                    </div>
-                </div>
-            </div>
+            {{ range sort .Pages "Params.weight" }}
 
             <div class="media" style="margin-bottom: 3em;">
                 <div class="media-left">
@@ -33,118 +14,23 @@
                 </div>
                 <div class="media-body clearfix">
                     <h4 class="media-heading">
-                        <a href="https://github.com/ncareau/S3-Filebox" target="_blank"><i class="fab fa-github"></i>
-                            S3 FileBox <i class="far fa-external-link"></i></a>
+                        <a href="{{ .Params.project_link }}" target="_blank">
+                            {{ if .Params.is_github_link }} <i class="fab fa-github"></i> {{ end }}
+                            {{ .Title }} <i class="far fa-external-link"></i></a>
                     </h4>
-                    <p>
-                        {% trans %}Preuve de concept d'un logiciel imitant les fonctionnalités de WeTransfert/FirefoxSend avec AWS S3, Lambda et VueJS{% endtrans %}
-                    </p>
 
+                    {{ .Content }}
+                    
                     <div>
-                        <span class="label label-primary">AWS</span>
-                        <span class="label label-primary">NodeJS</span>
-                        <span class="label label-primary">VueJS</span>
+                        {{ range .Params.tags }}
+                            <span class="label label-primary">{{ . }}</span>
+                        {{ end }}
                     </div>
                 </div>
             </div>
+    
+            {{ end }}
 
-            <div class="media" style="margin-bottom: 3em;">
-                <div class="media-left">
-                    <div style="width: 50px;"></div>
-                </div>
-                <div class="media-body clearfix">
-                    <h4 class="media-heading">
-                        <a href="https://github.com/ncareau/Glo2048" target="_blank"><i class="fab fa-github"></i> Glo
-                            2048 <i class="far fa-external-link"></i></a>
-                    </h4>
-                    <p>
-                        {% trans %}Reproduction de 2048 dans un logiciel web pour un concour.{% endtrans %} <a
-                                href="https://www.gitkraken.com/glo">Gitkraken Glo</a>
-                    </p>
-
-                    <div>
-                        <span class="label label-primary">PHP</span>
-                        <span class="label label-primary">API</span>
-                        <span class="label label-primary">Glo Boards</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="media" style="margin-bottom: 3em;">
-                <div class="media-left">
-                    <div style="width: 50px;"></div>
-                </div>
-                <div class="media-body clearfix">
-                    <h4 class="media-heading">
-                        <a href="https://github.com/ncareau/StreamScout" target="_blank"><i class="fab fa-github"></i>
-                            Streamscout <i class="far fa-external-link"></i></a>
-                    </h4>
-                    <p>
-                        {% trans %}Application frontend et API web pour la librairie{% endtrans %} <a
-                                href="https://github.com/streamlink/streamlink">Streamlink</a>.
-                    </p>
-
-                    <div>
-                        <span class="label label-primary">PHP</span>
-                        <span class="label label-primary">API</span>
-                        <span class="label label-primary">Streamlink</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="media" style="margin-bottom: 3em;">
-                <div class="media-left">
-                    <div style="width: 50px;"></div>
-                </div>
-                <div class="media-body clearfix">
-                    <h4 class="media-heading">
-                        <a href="https://pi.demo.nmc.click/" target="_blank">PiGame <i class="far fa-external-link"></i></a>
-                    </h4>
-                    <p>
-                        {% trans %}Jeux incrémentale de navigateur web avec les decimales de pi.{% endtrans %} <a
-                                href="/img_projects/pi.demo.video.mp4" target="_blank">{% trans %}Démo vidéo{% endtrans %}</a>
-                    </p>
-
-                    <div>
-                        <span class="label label-primary">PHP</span>
-                        <span class="label label-primary">Javascript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="media" style="margin-bottom: 3em;">
-                <div class="media-left">
-                    <div style="width: 50px;"></div>
-                </div>
-                <div class="media-body clearfix">
-                    <h4 class="media-heading">
-                        <a href="/img_projects/ith1.PNG" target="_blank">IT Ticket <i
-                                    class="far fa-image"></i></a>
-                    </h4>
-                    <p>
-                        {% trans %}Application web pour la gestion des tickets en TI.{% endtrans %}
-                    </p>
-
-                    <div>
-                        <span class="label label-primary">PHP</span>
-                        <span class="label label-primary">IT Tracking</span>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="text-center"><b>{% trans %}Pour en voir plus{% endtrans %}</b></div>
-
-                <div class="container-fluid text-center">
-                    <div class="col-md-4"><a href="https://github.com/ncareau" target="_blank"><h4><i
-                                        class="fab fa-github"></i> Github</h4></a></div>
-                    <div class="col-md-4"><a href="https://stackoverflow.com/users/1207809/nmc" target="_blank"><h4><i
-                                        class="fab fa-stack-overflow"></i> Stackoverflow</h4></a></div>
-                    <div class="col-md-4"><a href="https://www.mobygames.com/developer/sheet/view/developerId,423883/"
-                                             target="_blank"><h4><i class="far fa-gamepad"></i> MobyGames</h4></a></div>
-                </div>
-
-            </div>
             <hr/>
         </div>
     </div>
