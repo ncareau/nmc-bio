@@ -1,6 +1,6 @@
 ---
 title: "Certifications"
-weight: 28
+weight: 18
 ---
 
 My certifications and other skills.

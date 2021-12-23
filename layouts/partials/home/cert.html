@@ -2,7 +2,7 @@
 <div class="background-white">
     <div id="abilities" class="container">
 
-        <h3>{% trans %}Certifications{% endtrans %}</h3>
+        <h3>{{ i18n "cert_certifications" . }}</h3>
 
         <div class="row">
             <div class="col-xs-3">
@@ -27,21 +27,21 @@
 
         <hr>
 
-        <h3>{% trans %}Langues{% endtrans %}</h3>
+        <h3>{{ i18n "lang_language" . }}</h3>
 
         <div class="row">
             <div class="col-xs-6">
                 <ul class="no-bullets">
                     <li>
-                        <span class="ability-title">{% trans %}Français {% endtrans %}</span>
+                        <span class="ability-title">{{ i18n "lang_fr_title" . }}</span>
                         <span class="ability-score">
-                            {% trans %}Langue maternelle{% endtrans %}
+                            {{ i18n "lang_fr_capacity" . }}
                         </span>
                     </li>
                     <li>
-                        <span class="ability-title" style="width:50%">{% trans %}Anglais{% endtrans %}</span>
+                        <span class="ability-title" style="width:50%">{{ i18n "lang_en_title" . }}</span>
                         <span class="ability-score">
-                            {% trans %}Capacité professionnelle{% endtrans %}
+                            {{ i18n "lang_en_capacity" . }}
                         </span>
                     </li>
                 </ul>

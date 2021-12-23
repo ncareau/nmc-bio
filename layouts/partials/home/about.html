@@ -1,0 +1,34 @@
+
+<div class="background-white">
+    <div id="profile" class="container">
+        <h2>{{ i18n "about_aboutme" . }}</h2>
+        <p class="lead">{{ .Site.Params.keywords }}</p>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="/img/Nicolas Careau_low.jpg" alt="Photo of {{ .Site.Params.fullname }}" width="246" height="246">
+            </div>
+            <div class="col-md-4">
+                <h3>{{ i18n "about_aboutme" . }}</h3>
+                <p>{{ .Content }}</p>
+            </div>
+            <div class="col-md-4">
+                <h3>{{ i18n "about_details" . }}</h3>
+                <p>
+                    <strong>{{ i18n "about_name" . }}</strong><br>
+                    {{ .Site.Params.fullname }}<br>
+                    <strong>{{ i18n "about_hobbies" . }}</strong><br>
+                    {{ .Site.Params.hobbies }}<br>
+                    <strong>{{ i18n "about_location" . }}</strong><br>
+                    <a href="https://goo.gl/maps/8YB5S5V8w9v" target="_blank"><span class="fa fa-map-marker"></span>
+                        Québec, Canada </a><br>
+                    <strong>{{ i18n "about_dog" . }}</strong><br>
+                    <a href="https://howtoluna.ca" target="_blank"><i class="fas fa-paw"></i> Luna </a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
