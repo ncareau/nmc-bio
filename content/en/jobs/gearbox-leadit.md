@@ -1,6 +1,6 @@
 ---
 title: "Lead IT & DevOps"
-weight: 10
+weight: 50
 resources:
     - src: plant.jpg
       params:

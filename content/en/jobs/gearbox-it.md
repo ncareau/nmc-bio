@@ -1,6 +1,6 @@
 ---
 title: "Senior I.T. Specialist - DevOps"
-weight: 10
+weight: 60
 resources:
     - src: plant.jpg
       params:
@@ -17,4 +17,4 @@ links:
 * Support a game studio with all IT related tasks
 * Develop, build and manage tools and servers for day to day uses
 * Build and maintain Continuous integration systems
-* Worked on games like Borderlands 3 
+* Games worked on include Borderlands 3, Tiny Tina's Wonderland, etc.
