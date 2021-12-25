@@ -9,18 +9,20 @@
 
             <div class="media" style="margin-bottom: 3em;">
                 <div class="media-left">
+                    <div style="width: 100px;">
+                    {{ with .Resources.ByType "image" }}
+                    {{ range first 1 (sort . "Params.weight") }}
                     <a href="{{ .Params.client_link }}" target="_blank">
-                        {{ with .Resources.ByType "image" }}
-                        {{ range first 1 (sort . "Params.weight") }}
                         {{ $image := .Resize "100x webp" }}
                         <img  class="media-object" src="{{ $image.Permalink }}" alt ="{{ $image.Name }}" width="100">
-                        {{ end }}
-                        {{ end }}
                     </a>
+                    {{ end }}
+                    {{ end }}
+                    </div>
                 </div>
                 <div class="media-body clearfix">
                     <h4 class="media-heading">
-                        <a href="{{ .Params.client_link }}" target="_blank">Udata <i class="far fa-external-link"></i></a>
+                        <a href="{{ .Params.client_link }}" target="_blank">{{ .Title }} <i class="far fa-external-link"></i></a>
                     </h4>
 
                     {{ .Content }}

@@ -20,7 +20,7 @@
                     </h4>
 
                     {{ .Content }}
-                    
+
                     <div>
                         {{ range .Params.tags }}
                             <span class="label label-primary">{{ . }}</span>
@@ -30,6 +30,23 @@
             </div>
     
             {{ end }}
+
+
+            <!-- To see more section -->
+            <div>
+                <div class="text-center"><b>{{ i18n "proj_toseemore" . }}</b></div>
+
+                <div class="container-fluid text-center">
+                    <div class="col-md-4"><a href="https://github.com/ncareau" target="_blank"><h4><i
+                                        class="fab fa-github"></i> Github</h4></a></div>
+                    <div class="col-md-4"><a href="https://stackoverflow.com/users/1207809/nmc" target="_blank"><h4><i
+                                        class="fab fa-stack-overflow"></i> Stackoverflow</h4></a></div>
+                    <div class="col-md-4"><a href="https://www.mobygames.com/developer/sheet/view/developerId,423883/"
+                                             target="_blank"><h4><i class="far fa-gamepad"></i> MobyGames</h4></a></div>
+                </div>
+
+            </div>
+
 
             <hr/>
         </div>

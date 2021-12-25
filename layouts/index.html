@@ -14,6 +14,9 @@
 
     <body data-spy="scroll" data-target="#navbar-example" class="fixed">
 
+        <a class="skip-nav-link" href="#main-content">
+            Skip Navigation
+        </a>
 
         {{ if eq $.Site.Language.LanguageName "English" }}
             <div class="lang"><a href="/fr">FR</a></div>
@@ -82,6 +85,8 @@
             </div><!-- /.navbar-collapse -->
         </nav>
 
+        <div id="main-content">
+
         {{ with .Site.GetPage "/home" }}
         {{ $home := . }}
         {{ $pages := .Resources.ByType "page" }}
@@ -122,6 +127,8 @@
         {{ end }}
 
         {{ end }}
+
+        </div>
 
         {{ partial "footer/text.html" . }}
 

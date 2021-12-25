@@ -172,6 +172,20 @@ hr {
     z-index: 6;
 }
 
+.skip-nav-link {
+    background: black;
+    padding: .5rem 1.5rem;
+    border-radius: 0 0 .25rem .25rem;
+    position: absolute;
+    left: .5rem;
+    transform: translateY(-120%);
+    transition: transform 200ms ease-in;
+}
+
+.skip-nav-link:focus {
+    transform: translateY(0);
+}
+
 .navbar {
     border: 0px;
     background-color: #222222;

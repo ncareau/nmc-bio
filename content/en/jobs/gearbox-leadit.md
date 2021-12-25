@@ -1,10 +1,6 @@
 ---
 title: "Lead IT & DevOps"
 weight: 50
-resources:
-    - src: plant.jpg
-      params:
-          weight: -100
 job_company: "Gearbox Studio Québec"
 job_timeframe: "June 2020 - Present"
 links:

@@ -1,10 +1,6 @@
 ---
 title: "Senior I.T. Specialist - DevOps"
 weight: 60
-resources:
-    - src: plant.jpg
-      params:
-          weight: -100
 job_company: "Gearbox Studio Québec"
 job_timeframe: "Apr 2018 - June 2020 "
 links:
