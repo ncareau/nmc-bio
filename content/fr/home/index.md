@@ -2,7 +2,7 @@
 title: "Hi, I'm Introduction"
 headless: true
 resources:
-    - src: Nicolas Careau.jpg
+    - src: "Nicolas Careau_opengraph.jpg"
       params:
           weight: -100
 ---
