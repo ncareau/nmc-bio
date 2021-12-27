@@ -1,8 +1,8 @@
 ---
 title: "Full Stack Web Developer / Infrastructure Administrator"
-weight: 60
+weight: 70
 job_company: "Ciao"
-job_timeframe: "Apr 2018 - June 2020 "
+job_timeframe: "Jun 2015 - Apr 2018"
 links:
     - url: "http://ciao.ca/" 
       name:  "ciao.ca"

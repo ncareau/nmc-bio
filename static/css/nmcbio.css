@@ -117,8 +117,8 @@ hr {
     -o-background-size: cover;
     background-size: cover;
 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background_low.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background_low.jpg', sizingMethod='scale');
 
     margin-bottom: 0px;
     padding: 0px;
