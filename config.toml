@@ -25,10 +25,10 @@ languageCode = 'en-us'
         languageCode     = "en-us"
         contentDir       = "content/en"
         weight           = 0
-        title            = "Nicolas M. Careau - Developer and technologist"
+        title            = "Nicolas M. Careau - My bio page"
 
         [languages.en.params]
-            description  = "CHANGECHANGECHANGEME"
+            description  = "IT Specialist with a background in video games and web development."
             keywords     = "Development - Technology - Video games"
             hobbies      = "Video Games, LEGO, Electronics" 
 
@@ -37,9 +37,9 @@ languageCode = 'en-us'
         languageCode     = "fr"
         contentDir       = "content/fr"
         weight           = 1
-        title            = "Nicolas M. Careau - Développeur et technologue"
+        title            = "Nicolas M. Careau - Ma page bio"
         
         [languages.fr.params]
-            description  = "CHANGECHANGECHANGEME"
+            description  = "Spécialiste en TI et Développement avec un parcours dans l'industrie du jeu vidéo"
             keywords     = "Développement - Technologies - Jeux Vidéos"
             hobbies      = "Jeux vidéos, LEGO, Électronique"
