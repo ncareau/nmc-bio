@@ -6,13 +6,13 @@
          <div class="col-md-12">
  
             {{ range sort .Pages "Params.weight" }}
-
+            {{ $client := . }}
             <div class="media" style="margin-bottom: 3em;">
                 <div class="media-left">
                     <div style="width: 100px;">
                     {{ with .Resources.ByType "image" }}
                     {{ range first 1 (sort . "Params.weight") }}
-                    <a href="{{ .Params.client_link }}" target="_blank">
+                    <a href="{{ $client.Params.client_link }}" target="_blank">
                         {{ $image := .Resize "100x webp" }}
                         <img  class="media-object" src="{{ $image.Permalink }}" alt ="{{ $image.Name }}" width="100">
                     </a>
