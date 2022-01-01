@@ -4,14 +4,11 @@
 <meta property="og:url" content="{{ .Permalink }}"/>
 <meta property="og:site_name" content="{{ .Site.Title | markdownify }}"/>
 
-{{ with .Resources.ByType "image" }}
-{{ range first 5 (sort . "Params.weight") }}
-<meta property="og:image" content="{{ .Permalink }}"/>
-{{ end }}
-{{ else }}
 {{ with .Site.GetPage "page" "/home" }}
 {{ range first 5 (.Resources.ByType "image") }}
+{{ if eq .Name "nmc_og.jpg" }}
 <meta property="og:image" content="{{ .Permalink }}"/>
 {{ end }}
 {{ end }}
 {{ end }}
+
