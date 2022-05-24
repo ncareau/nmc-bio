@@ -9,7 +9,7 @@ $(document).ready(function () {
     applyStickyNavigation();
     nmcAnim();
 
-    // applyResize();
+    applyResize();
 });
 
 function nmcAnim() {
@@ -118,7 +118,7 @@ function stickyNavigation() {
 
 function applyResize() {
     $(window).on('resize', function () {
-        lnStickyNavigation = $('.scroll-down').offset().bottom + 20;
+        // lnStickyNavigation = $('.scroll-down').offset().bottom + 20;
 
         $('.jumbotron').css({height: ($(window).height()) + 'px'});
     });
