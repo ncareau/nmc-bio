@@ -1,6 +1,6 @@
 ---
 title: "Développeur Web Full Stack / Administrateur d'infrastructure"
-weight: 60
+weight: 70
 job_company: "Ciao"
 job_timeframe: "Jun 2015 - Avr 2018"
 links:

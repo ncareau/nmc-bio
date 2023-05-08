@@ -1,5 +1,5 @@
 ---
-title: "Video Game Tester"
+title: "IT Specialist"
 weight: 90
 job_company: "Activision / Beenox"
 job_timeframe: "Apr 2010 - Nov 2013"

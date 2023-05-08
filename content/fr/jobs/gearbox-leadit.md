@@ -1,8 +1,8 @@
 ---
 title: "Lead IT & DevOps"
-weight: 50
+weight: 59
 job_company: "Gearbox Studio Québec"
-job_timeframe: "Juin 2020 - Présent"
+job_timeframe: "Juin 2020 - Novembre 2022"
 links:
     - url: "https://quebec.gearboxsoftware.com" 
       name:  "quebec.gearboxsoftware.com"
