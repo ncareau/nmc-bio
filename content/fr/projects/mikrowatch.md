@@ -9,4 +9,4 @@ tags:
     - "Grafana"
 ---
 
-Logiciel permettant de prendre les données métriques d'un router Mikrotik et de les envoyé vers InfluxDB 
+Logiciel permettant de prendre les données métriques d'un routeur Mikrotik et de les envoyer vers InfluxDB 

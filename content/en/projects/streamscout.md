@@ -9,4 +9,4 @@ tags:
     - "Streamlink"
 ---
 
-Frontend application and web API for Streamlink library. [Streamlink](https://github.com/streamlink/streamlink)
+A web frontend and API for the [Streamlink](https://github.com/streamlink/streamlink) library.

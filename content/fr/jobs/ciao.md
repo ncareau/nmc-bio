@@ -8,8 +8,8 @@ links:
       name:  "ciao.ca"
 ---
 
-* Optimiser, développer et support de projets web.
+* Optimisation, développement et support de projets web.
 * Architecte d'infrastructures technologiques.
 * Développement d'outils et de procédures pour l'intégration continue.
 * Gestion de plusieurs serveurs internes et infonuagiques (Azure + AWS)
-* C#, .NET, MySQL, MSSQL, PHP, Powershell, Javascript 
+* C#, .NET, MySQL, MSSQL, PHP, PowerShell, JavaScript 

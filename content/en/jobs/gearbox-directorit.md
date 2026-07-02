@@ -10,10 +10,10 @@ links:
       name: "gearboxsoftware.com"
 ---
 
-* Oversees IT Operation, Purchases, Hiring and overall management for 2 locations: Québec City & Montréal
-* Manage multiple teams that develops, maintain and secure a state-of-the-art infrastructure.
-* Analyzes business requirements for IT needs and systems
-* Leaded efforts on building 2 new studios of ~200 employees. Including IT infrastructure, logistics, etc.
+* Oversee IT Operations, Purchases, Hiring and overall management for 2 locations: Québec City & Montréal
+* Manage multiple teams that develop, maintain, and secure a state-of-the-art infrastructure.
+* Analyze business requirements for IT needs and systems
+* Led efforts on building 2 new studios of ~200 employees, including IT infrastructure, logistics, etc.
 
 
 

@@ -10,6 +10,6 @@ links:
       name: "gearboxsoftware.com"      
 ---
 
-* Manage a team that develops and maintain a state-of-the-art infrastructure.
+* Manage a team that develops and maintains a state-of-the-art infrastructure.
 * System architecture and logistic management.
 * International studio and triple A projects 

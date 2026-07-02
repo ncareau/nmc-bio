@@ -1,6 +1,6 @@
 ---
-title: "Projects"
+title: "Projets"
 weight: 20
 ---
 
-List of some open and closed source project i have worked on.
+Liste de quelques projets à code source ouvert ou fermé sur lesquels j'ai travaillé.

@@ -7,4 +7,4 @@ tags:
     - "Cloud"
 ---
 
-Entreprise qui offre un service de remplacant dans les vétérinaire a l'aide d'un logiciel de placement.
+Entreprise qui offre un service de remplacement pour les cliniques vétérinaires à l'aide d'un logiciel de placement.

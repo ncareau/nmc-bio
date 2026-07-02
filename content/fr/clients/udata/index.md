@@ -7,4 +7,4 @@ tags:
     - "Infrastructure"
 ---
 
-Entreprise qui offre un logiciel de gestion numérique de données. Developpeur de la plateforme [rpa360.com](https://rpa360.com/)
+Entreprise qui offre un logiciel de gestion numérique de données. Développeur de la plateforme [rpa360.com](https://rpa360.com/)

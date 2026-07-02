@@ -7,4 +7,4 @@ tags:
     - "Cloud"
 ---
 
-Vetreseau is a business that offer a substitute service for veterinary with the help of a web application.
+Vetreseau is a business that provides relief staffing for veterinary clinics through a web application.

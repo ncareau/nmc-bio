@@ -6,7 +6,7 @@ project_link: "https://pi.demo.nmc.click/"
 tags:
     - "Incremental Game"
     - "PHP"
-    - "Javascript"
+    - "JavaScript"
 ---
 
-Jeux incrémentale de navigateur web avec les decimales de pi. [Demo video](/img_projects/pi.demo.video.mp4)
+Jeu incrémental de navigateur web avec les décimales de pi. [Vidéo de démo](/img_projects/pi.demo.video.mp4)

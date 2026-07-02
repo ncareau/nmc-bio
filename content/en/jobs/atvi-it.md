@@ -12,6 +12,6 @@ links:
 
 * Diagnose, repair and optimize problems and issues for 300+ employees
 * Develop and maintain tools helpful for our day-to-day tasks. PHP, MySQL.
-* Create methods and procedures of the whole I.T workflow.
+* Create methods and procedures of the whole I.T. workflow.
 * Work with new and sometimes unorthodox technology, create documentation and provide support.
-* Franchise like Call of Duty, Skylanders and Guitar Hero 
+* Franchises like Call of Duty, Skylanders and Guitar Hero 

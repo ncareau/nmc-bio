@@ -6,4 +6,4 @@ tags:
     - "Website"
 ---
 
-The Association of Statisticians and Statisticians of Quebec (ASSQ) is a group of statisticians established in the province of Quebec, Canada.
+The Association of Statisticians of Quebec (ASSQ) is a group of statisticians established in the province of Quebec, Canada.

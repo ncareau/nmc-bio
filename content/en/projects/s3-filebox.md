@@ -9,4 +9,4 @@ tags:
     - "VueJS"
 ---
 
-Proof of concept of a WeTransfert/FirefoxSend clone with AWS S3, Lambda and VueJS 
+Proof of concept of a WeTransfer / Firefox Send clone with AWS S3, Lambda and VueJS 

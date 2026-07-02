@@ -7,4 +7,4 @@ tags:
     - "Infrastructure"
 ---
 
-Enterprise developping software to manage companies forms and data. Developers of [rpa360.com](https://rpa360.com/)
+Enterprise developing software to manage company forms and data. Developers of [rpa360.com](https://rpa360.com/)

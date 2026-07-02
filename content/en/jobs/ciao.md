@@ -12,4 +12,4 @@ links:
 * Infrastructure architecture and development
 * Develop tools and workflow for continuous integration
 * Managing multiple servers in-house and in-cloud (Azure + AWS)
-* C#, .NET, MySQL, MSSQL, PHP, Powershell, Javascript 
+* C#, .NET, MySQL, MSSQL, PHP, PowerShell, JavaScript 

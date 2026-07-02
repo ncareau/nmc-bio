@@ -14,4 +14,4 @@ links:
 * Développement et maintien d'outils pour les tâches quotidiennes.
 * Développement de méthodes et procédures pour le département.
 * Travaille avec de nouvelles technologies peu orthodoxes.
-* Franchise tel que Call of duty, Skylanders et Guitar Hero 
+* Franchises telles que Call of Duty, Skylanders et Guitar Hero 

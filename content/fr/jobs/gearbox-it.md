@@ -10,7 +10,7 @@ links:
       name: "gearboxsoftware.com"      
 ---
 
-* Supporte un studio de jeux pour toutes les taches en TI.
-* Analyse, développe et maintien les outils de TI et DevOps.
-* Maintien et développe les systèmes d'intégration continue.
-* Travaillé sur des jeux tel que Borderlands 3 
+* Soutien informatique complet pour un studio de jeux vidéo.
+* Analyse, développe et maintient les outils de TI et DevOps.
+* Maintient et développe les systèmes d'intégration continue.
+* Travaillé sur des jeux tels que Borderlands 3 

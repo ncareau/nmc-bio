@@ -9,4 +9,4 @@ tags:
     - "VueJS"
 ---
 
-Preuve de concept d'un logiciel imitant les fonctionnalités de WeTransfert/FirefoxSend avec AWS S3, Lambda et VueJS 
+Preuve de concept d'un logiciel imitant les fonctionnalités de WeTransfer / Firefox Send avec AWS S3, Lambda et VueJS 

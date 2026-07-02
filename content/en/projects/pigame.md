@@ -6,7 +6,7 @@ project_link: "https://pi.demo.nmc.click/"
 tags:
     - "Incremental Game"
     - "PHP"
-    - "Javascript"
+    - "JavaScript"
 ---
 
 Incremental game idea with pi decimal. [Demo video](/img_projects/pi.demo.video.mp4)

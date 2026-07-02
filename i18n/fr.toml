@@ -47,7 +47,7 @@
     other = "Certifications"
 
 [lang_language]
-    other = "Language"
+    other = "Langue"
 
 [lang_fr_title]
     other = "Français"
@@ -71,7 +71,7 @@
     other = "404"
 
 [404_description]
-    other = "Oops! Either you've found a bug{{ with .Site.Params.email }} (in which case, [please tell me](mailto:{{ . }})) {{ end }} or you're just making things up. This page doesn't exist!"
+    other = "Oups! Soit vous avez trouvé un bogue{{ with .Site.Params.email }} (dans ce cas, [veuillez me le signaler](mailto:{{ . }})) {{ end }} soit cette page n'existe tout simplement pas!"
 
 [copy]
     other = ""

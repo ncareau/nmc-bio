@@ -11,6 +11,6 @@ links:
 ---
 
 * Support a game studio with all IT related tasks
-* Develop, build and manage tools and servers for day to day uses
+* Develop, build and manage tools and servers for day-to-day use
 * Build and maintain Continuous integration systems
-* Games worked on include Borderlands 3, Tiny Tina's Wonderland, etc.
+* Games worked on include Borderlands 3, Tiny Tina's Wonderlands, etc.
