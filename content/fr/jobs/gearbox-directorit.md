@@ -2,7 +2,7 @@
 title: "Directeur TI"
 weight: 58
 job_company: "Gearbox Studio Québec \nGearbox Studio Montréal"
-job_timeframe: "November 2022 - Present"
+job_timeframe: "Novembre 2022 - Février 2026"
 links:
     - url: "https://quebec.gearboxsoftware.com" 
       name: "quebec.gearboxsoftware.com"

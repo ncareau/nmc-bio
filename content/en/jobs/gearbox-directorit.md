@@ -2,7 +2,7 @@
 title: "IT Director"
 weight: 58
 job_company: "Gearbox Studio Québec \nGearbox Studio Montréal"
-job_timeframe: "November 2022 - Present"
+job_timeframe: "November 2022 - February 2026"
 links:
     - url: "https://quebec.gearboxsoftware.com" 
       name: "quebec.gearboxsoftware.com"
