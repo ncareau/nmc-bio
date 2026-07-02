@@ -10,6 +10,6 @@ links:
       name: "gearboxsoftware.com"      
 ---
 
-* Gestion d'une équipe qui developpe et maintienne une infrastructure a la fine pointe de la technologie
+* Gestion d'une équipe qui développe et maintient une infrastructure à la fine pointe de la technologie
 * Architecture de système informatique ainsi que gestion logistique du studio.
 * Studio international et projet triple A. 
